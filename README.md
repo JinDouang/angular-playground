@@ -2,6 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
 
+## Build application
+
+Here is a list of arguments you can use for build.sh (`chmod u+x build.sh` if permission denied)
+
+`./build.sh `
+
+| Script       | Description                                  | Raw instruction                              |
+| ------------ | -------------------------------------------- | ----------------------------------- |
+| build        | build angular image                        | `docker imae build -t angular-playground .` |
+
+
+Example: `./build.sh build`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
