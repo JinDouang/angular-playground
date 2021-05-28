@@ -8,9 +8,9 @@ Here is a list of arguments you can use for build.sh (`chmod u+x build.sh` if pe
 
 `./build.sh `
 
-| Script       | Description                                  | Raw instruction                              |
+| Arguments       | Description                                  | Raw instruction to type                             |
 | ------------ | -------------------------------------------- | ----------------------------------- |
-| build        | build angular image                        | `docker imae build -t angular-playground .` |
+| build        | build angular image                        | `docker image build -t angular-playground .` |
 
 
 Example: `./build.sh build`
