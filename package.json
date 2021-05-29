@@ -4,8 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:docker": "docker-compose up --remove-orphans angular-start",
     "build": "ng build",
-    "build:docker": "docker image build -t angular-playground",
+    "build:docker": "./build.sh buildAngularApp",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

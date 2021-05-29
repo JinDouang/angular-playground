@@ -2,7 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
 
-## Build application
+# Angular (Docker version)
+
+Before you do anything, you must build your dockerized Angular application
+Run `./build.sh build` to build angular-playground image and in order to interact with docker-compose
+
+## Build arguments
 
 Here is a list of arguments you can use for build.sh (`chmod u+x build.sh` if permission denied)
 
@@ -11,6 +16,7 @@ Here is a list of arguments you can use for build.sh (`chmod u+x build.sh` if pe
 | Arguments       | Description                                  | Raw instruction to type                             |
 | ------------ | -------------------------------------------- | ----------------------------------- |
 | build        | build angular image                        | `docker image build -t angular-playground .` |
+| clean        | clean angular image                        | `docker rmi angular-playground` |
 
 
 Example: `./build.sh build`

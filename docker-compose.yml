@@ -1,0 +1,21 @@
+version: '3.5'
+
+services:
+    angular-start: # The name of the service
+        container_name: angular-start_container
+        image: angular-playground:latest
+        build: .
+        ports:
+          - '4200:4200' # Port mapping
+        command: >
+           sh -c "node_modules/@angular/cli/bin/ng serve --host 0.0.0.0 --port 4200"
+        volumes: # Volume binding
+          - './:/usr/src/app'
+          - '/usr/src/app/node_modules'
+    angular:
+        container_name: angular-start_container
+        image: angular-playground:latest
+        build: .
+        volumes: # Volume binding
+          - './:/usr/src/app'
+          - '/usr/src/app/node_modules'
